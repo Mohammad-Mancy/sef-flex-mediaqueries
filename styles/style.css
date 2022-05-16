@@ -53,9 +53,9 @@ nav{
 }
 .text-box{
     width:40%;
+    padding-left: 5%;
     color:white;
-    position: absolute;
-    top:50%;
+    margin-top: 20%;
     left: 5%;
     transform: translate(0%,0%);
     text-align: left;
@@ -105,6 +105,7 @@ padding: 10px;
    flex-wrap: nowrap;
 }
 .skills{
+    display: flex;
     width:80%;
     margin:auto;
     padding-top: 50px;
@@ -221,7 +222,6 @@ span{
     text-align: center;
 }
 .media-1-2{
-
     background-color: rgb(211, 211, 211);
     display: flex;
     flex-direction: row;
@@ -317,18 +317,11 @@ span{
     overflow: hidden;
     justify-content: space-around;
 }
-
-@media (max-width: 900px){
-    [class*="info-1"]{
-        flex-direction: column;
-    }
-    [class*="cycle-flex"]{
-        flex-direction: column;
-    }
-
+.burger-parent{
+    display: none;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     [class*="text-box"]{
         width: 80%;
         }
@@ -337,6 +330,35 @@ span{
     }
     [class*="text-box p"]{
         font-size: 65px;
+    }
+    [class*="media-1-2"]{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    [class*="strategy-partner-row"]{
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    [class*="info-1"]{
+        flex-direction: column;
+    }
+    [class*="cycle-flex"]{
+        flex-direction: column;
+    }
+    
+    [class*="nav-tags"]{
+        display: none;}
+    [class*="burger-icon"]{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    [class*="burger-parent"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     }
     
 
